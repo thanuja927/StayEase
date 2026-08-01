@@ -1,0 +1,543 @@
+/*================ BODY =================*/
+
+body{
+
+    background:
+    linear-gradient(rgba(0,0,0,.55),
+    rgba(0,0,0,.55)),
+    url("../images/backgrdimage20.jpg");
+
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+}
+
+/*================ PAYMENT SECTION =================*/
+
+.payment-section{
+
+    min-height:100vh;
+    margin-top:130px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    padding:120px 20px 40px;
+
+}
+
+/*================ CONTAINER =================*/
+
+.payment-container{
+
+    width:1000px;
+    max-width:100%;
+
+    display:flex;
+    gap:20px;
+
+}
+
+/*================ LEFT CARD =================*/
+
+.booking-card{
+
+    width:35%;
+
+    background:rgba(20,20,20,.92);
+
+    border:1px solid rgba(255,215,0,.25);
+
+    border-radius:25px;
+
+    padding:35px;
+
+    color:white;
+
+    box-shadow:
+    0 10px 35px rgba(0,0,0,.45);
+
+}
+
+.booking-card h2{
+
+    color:#e7bf4d;
+
+    text-align:center;
+
+    font-size:34px;
+
+    margin-bottom:45px;
+
+}
+
+.booking-card h2 i{
+
+    margin-right:10px;
+
+}
+
+/*================ SUMMARY =================*/
+
+.summary{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:20px;
+
+}
+
+.item{
+
+    display:flex;
+
+    gap:20px;
+
+    align-items:flex-start;
+
+}
+
+.item i{
+
+    color:#d6b14d;
+
+    font-size:24px;
+
+    margin-top:5px;
+
+}
+
+.item h4{
+
+    margin:0;
+
+    color:#e7bf4d;
+
+    font-size:18px;
+
+}
+
+.item p{
+
+    color:#f3f3f3;
+
+    font-size:18px;
+    margin-top:5px;
+
+}
+
+.booking-card hr{
+
+    border:none;
+
+    border-top:1px solid rgba(255,255,255,.15);
+
+    margin:45px 0;
+
+}
+
+/*================ TOTAL =================*/
+
+.total{
+
+    text-align:center;
+
+}
+
+.total h3{
+
+    color:white;
+
+    font-size:32px;
+
+    margin-bottom:15px;
+
+}
+
+.total h1{
+
+    color:#f5c542;
+
+    font-size:46px;
+
+    margin:0;
+
+}
+
+/*================ RIGHT CARD =================*/
+
+.payment-card{
+
+    flex:1;
+
+    background:rgba(20,20,20,.92);
+
+    border:1px solid rgba(255,215,0,.25);
+
+    border-radius:25px;
+
+    padding:20px;
+
+    color:white;
+
+    box-shadow:0 10px 35px rgba(0,0,0,.45);
+
+}
+
+.payment-card h2{
+
+    text-align:center;
+
+    color:#e7bf4d;
+
+    font-size:28px;
+
+    margin-bottom:10px;
+
+}
+
+.payment-card h2 i{
+
+    margin-right:12px;
+
+}
+
+/*================ GOLD LINE =================*/
+
+.line{
+
+    width:180px;
+
+    height:2px;
+
+    background:#d6b14d;
+
+    margin:15px auto 35px;
+
+    border-radius:5px;
+
+}
+
+/*================ FORM =================*/
+
+.title{
+
+    display:block;
+
+    font-size:20px;
+
+    margin-bottom:20px;
+
+    font-weight:bold;
+
+}
+
+/*================ PAYMENT OPTIONS =================*/
+
+.payment-options{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:18px;
+
+    margin-bottom:35px;
+
+}
+
+
+.option{
+
+    background:#1d1d1d;
+
+    border:1px solid #444;
+
+    border-radius:15px;
+
+    padding:18px 11px;
+
+    cursor:pointer;
+
+    text-align:center;
+
+    transition:.3s;
+
+    position:relative;
+
+}
+
+.option:hover{
+
+    border-color:#d6b14d;
+
+    transform:translateY(-5px);
+
+}
+
+.option input{
+
+    display:none;
+
+}
+
+.option i{
+
+    font-size:30px;
+
+    color:#d6b14d;
+
+    margin-bottom:12px;
+
+    display:block;
+
+}
+
+.option span{
+
+    display:block;
+
+    font-size:16px;
+
+    color:white;
+
+}
+
+/*================ INPUTS =================*/
+
+.input-box{
+
+    margin-bottom:25px;
+
+}
+
+.input-box label{
+
+    display:block;
+
+    margin-bottom:10px;
+
+    font-size:18px;
+
+}
+
+.input-box input{
+
+    width:100%;
+
+    padding:16px;
+
+    background:#181818;
+
+    border:1px solid #555;
+
+    border-radius:14px;
+
+    color:white;
+
+    font-size:16px;
+
+    outline:none;
+
+    transition:.3s;
+
+    box-sizing:border-box;
+
+}
+
+.input-box input:focus{
+
+    border-color:#d6b14d;
+
+}
+
+.row{
+
+    display:flex;
+
+    gap:20px;
+
+}
+
+.row .input-box{
+
+    flex:1;
+
+}
+
+/*================ BUTTON =================*/
+
+.pay-btn{
+
+    width:100%;
+
+    padding:18px;
+
+    border:none;
+
+    border-radius:12px;
+
+    background:linear-gradient(to right,#d4a017,#ffd54f);
+
+    color:black;
+
+    font-size:22px;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+    margin-top:15px;
+
+    transition:.3s;
+
+}
+
+.pay-btn:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:0 10px 25px rgba(255,215,0,.35);
+
+}
+
+.pay-btn i{
+
+    margin-right:10px;
+
+}
+
+/*================ SECURE =================*/
+
+.secure{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:15px;
+
+    margin-top:30px;
+
+    text-align:center;
+
+}
+
+.secure i{
+
+    font-size:28px;
+
+    color:#65d36e;
+
+}
+
+.secure h4{
+
+    margin:0;
+
+    color:#65d36e;
+
+    font-size:20px;
+
+}
+
+.secure p{
+
+    margin-top:6px;
+
+    color:#ddd;
+
+    font-size:15px;
+
+}
+
+/*================ RESPONSIVE =================*/
+
+@media(max-width:1000px){
+
+.payment-container{
+
+    flex-direction:column;
+
+}
+
+.booking-card{
+
+    width:auto;
+
+}
+
+.payment-options{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+
+@media(max-width:650px){
+
+.payment-options{
+
+    grid-template-columns:1fr;
+
+}
+
+.row{
+
+    flex-direction:column;
+
+}
+
+.payment-card{
+
+    padding:25px;
+
+}
+
+.booking-card{
+
+    padding:25px;
+
+}
+
+}
+
+/*================ ACTIVE PAYMENT OPTION =================*/
+
+.option.active{
+
+    border:2px solid #d4af37;
+
+    background:#262626;
+
+    box-shadow:0 0 20px rgba(212,175,55,.25);
+
+}
+
+.option.active i{
+
+    color:#ffd54f;
+
+}
+
+.option.active span{
+
+    color:#ffd54f;
+
+}
+
+
+.payment-form{
+    display:none;
+}
+
+.payment-form.active{
+    display:block;
+}

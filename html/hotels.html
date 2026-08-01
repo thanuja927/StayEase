@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Hotels</title>
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/hotels.css">
+</head>
+
+<body>
+
+    <nav>
+        <div class="logo">🏨 StayEase</div>
+
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="hotels.html">Hotels</a></li>
+            <li><a href="room-details.html">Rooms</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="register.html">Register</a></li>
+            <li><a href="payment.html">Profile</a></li>
+            <li><a href="profile.html">Payment</a></li>
+        </ul>
+    </nav>
+
+    <div class="search-container">
+
+        <div class="search-box">
+
+            <input type="text" id="destination" placeholder="Enter City">
+
+            <input type="date">
+
+            <input type="date">
+
+            <select>
+                <option>1 Guest</option>
+                <option>2 Guests</option>
+                <option>3 Guests</option>
+                <option>4 Guests</option>
+                <option>5 Guests</option>
+                <option>6 Guests</option>
+            </select>
+
+            <button class="search-btn" onclick="searchHotel()">
+                Search
+            </button>
+
+
+        </div>
+
+    </div>
+
+    <section class="featured" id="featured-hotels">
+
+        <h2>Featured Hotels</h2>
+
+        <div class="hotel-container">
+            <div class="card" data-city="bangalore">
+                <img src="../images/hotelpic1.jpg">
+                <h3>Grand Palace Hotel</h3>
+                <p>⭐⭐⭐⭐⭐</p>
+                <p>Bangalore</p>
+                <p>₹3500 / Night</p>
+                <button onclick="window.location.href='room-details.html?hotel=bangalore'">
+                    View Details
+                </button>
+            </div>
+
+            <div class="card" data-city="goa">
+                <img src="../images/hotelpic2.jpg">
+                <h3>Ocean View Resort</h3>
+                <p>⭐⭐⭐⭐☆</p>
+                <p>Goa</p>
+                <p>₹4200 / Night</p>
+                <button onclick="window.location.href='room-details.html?hotel=goa'">
+                    View Details
+                </button>
+            </div>
+
+            <div class="card" data-city="ooty">
+                <img src="../images/hotelpic3.jpg">
+                <h3>Mountain Retreat</h3>
+                <p>⭐⭐⭐⭐⭐</p>
+                <p>Ooty</p>
+                <p>₹2900 / Night</p>
+                <button onclick="window.location.href='room-details.html?hotel=ooty'">
+                    View Details
+                </button>
+            </div>
+
+            <div class="card" data-city="delhi">
+                <img src="../images/hotelpic4.jpg">
+                <h3>City Lights Hotel</h3>
+                <p>⭐⭐⭐☆☆</p>
+                <p>Delhi</p>
+                <p>₹2500 / Night</p>
+                <button onclick="window.location.href='room-details.html?hotel=delhi'">
+                    View Details
+                </button>
+            </div>
+
+            <div class="card" data-city="mumbai">
+                <img src="../images/hotelpic5.jpg">
+                <h3>Marina Bay Hotel</h3>
+                <p>⭐⭐⭐⭐⭐</p>
+                <p>Mumbai</p>
+                <p>₹4500 / Night</p>
+                <button onclick="window.location.href='room-details.html?hotel=mumbai'">
+                    View Details
+                </button>
+            </div>
+
+            <div class="card" data-city="hyderabad">
+                <img src="../images/hotelpic6.jpg">
+                <h3>Pearl Residency</h3>
+                <p>⭐⭐⭐⭐☆</p>
+                <p>Hyderabad</p>
+                <p>₹3200 / Night</p>
+                <button onclick="window.location.href='room-details.html?hotel=hyderabad'">
+                    View Details
+                </button>
+            </div>
+
+            <div class="card" data-city="jaipur">
+                <img src="../images/hotelpic7.jpg">
+                <h3>Royal Heritage Palace</h3>
+                <p>⭐⭐⭐⭐⭐</p>
+                <p>Jaipur</p>
+                <p>₹3800 / Night</p>
+                <button onclick="window.location.href='room-details.html?hotel=jaipur'">
+                    View Details
+                </button>
+            </div>
+
+            <div class="card" data-city="chennai">
+                <img src="../images/hotelpic8.jpg">
+                <h3>Beachside Paradise Resort</h3>
+                <p>⭐⭐⭐⭐☆</p>
+                <p>Chennai</p>
+                <p>₹3100 / Night</p>
+                <button onclick="window.location.href='room-details.html?hotel=chennai'">
+                    View Details
+                </button>
+            </div>
+
+            <div class="card" data-city="coorg">
+                <img src="../images/hotelpic9.jpg">
+                <h3>Coorg Coffee Estate Stay</h3>
+                <p>⭐⭐⭐⭐⭐</p>
+                <p>Coorg</p>
+                <p>₹4000 / Night</p>
+                <button onclick="window.location.href='room-details.html?hotel=coorg'">
+                    View Details
+                </button>
+            </div>
+
+            <div class="card" data-city="manali">
+                <img src="../images/hotelpic10.jpg">
+                <h3>Himalayan Bliss Resort</h3>
+                <p>⭐⭐⭐⭐☆</p>
+                <p>Manali</p>
+                <p>₹3600 / Night</p>
+                <button onclick="window.location.href='room-details.html?hotel=manali'">
+                    View Details
+                </button>
+            </div>
+
+        </div>
+
+    </section>
+    <script src="../js/common.js"></script>
+    <script src="../js/hotels.js"></script>
+  
+</body>
+
+</html>

@@ -1,0 +1,461 @@
+/*================ BODY =================*/
+
+body{
+    margin:0;
+    padding:0;
+    font-family:Arial, Helvetica, sans-serif;
+
+    background:
+    linear-gradient(rgba(0,0,0,.45),
+    rgba(0,0,0,.45)),
+    url("../images/backgrdimage13.jpg");
+
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+}
+/*================ LOGIN SECTION =================*/
+
+.login-section{
+
+    min-height:auto;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:100px 20px 40px;
+
+}
+
+
+/*================ LOGIN BOX =================*/
+
+.login-box{
+
+    width:380px;
+
+    max-width:90%;
+
+    padding:30px 35px;
+
+    border-radius:22px;
+
+
+    background:rgba(15,20,35,0.45);
+
+    backdrop-filter:blur(18px);
+
+    -webkit-backdrop-filter:blur(18px);
+
+
+    border:1px solid rgba(255,255,255,.25);
+
+    box-shadow:0 20px 40px rgba(0,0,0,.45);
+
+    box-sizing:border-box;
+
+}
+
+
+/*================ HEADING =================*/
+
+
+.login-box h1{
+
+    text-align:center;
+
+    color:white;
+
+    font-size:38px;
+
+    margin:0 0 15px;
+
+}
+
+
+.login-box p{
+
+    text-align:center;
+
+    color:#eee;
+
+    font-size:16px;
+
+    margin-bottom:25px;
+
+}
+
+
+.login-box span{
+
+    color:#f7c948;
+
+    font-weight:bold;
+
+}
+
+
+/*================ LABEL =================*/
+
+
+.login-box label{
+
+    display:block;
+
+    color:white;
+
+    margin-bottom:7px;
+
+    font-size:15px;
+
+    font-weight:600;
+
+}
+
+
+
+/*================ INPUT BOX =================*/
+
+
+.input-box{
+
+    height:48px;
+
+    display:flex;
+
+    align-items:center;
+
+    background:rgba(255,255,255,.12);
+
+    border:1px solid rgba(255,255,255,.35);
+
+    border-radius:12px;
+
+    margin-bottom:18px;
+
+    padding:0 15px;
+
+}
+
+
+
+.input-box i{
+
+    color:white;
+
+    font-size:17px;
+
+}
+
+
+
+.input-box input{
+
+    height:100%;
+
+    width:100%;
+
+    padding:0 12px;
+
+    font-size:15px;
+
+    background:none;
+
+    border:none;
+
+    outline:none;
+
+    color:white;
+
+}
+
+
+
+.input-box input::placeholder{
+
+    color:#ddd;
+
+}
+
+
+
+.eye{
+
+    cursor:pointer;
+
+}
+
+
+/*================ OPTIONS =================*/
+
+
+.options{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:22px;
+
+}
+
+
+.options label{
+
+    font-size:14px;
+
+}
+
+
+
+.options a{
+
+    color:#f7c948;
+
+    font-size:14px;
+
+    text-decoration:none;
+
+    font-weight:bold;
+
+}
+
+
+
+/*================ BUTTON =================*/
+
+
+.login-box button{
+
+    width:100%;
+
+    height:48px;
+
+    border:none;
+
+    border-radius:12px;
+
+    background:#f7c948;
+
+    color:black;
+
+    font-size:17px;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+
+
+.login-box button:hover{
+
+    background:#111827;
+
+    color:white;
+
+    transform:translateY(-2px);
+
+}
+
+
+
+/*================ DIVIDER =================*/
+
+
+.divider{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    margin:25px 0;
+
+    color:white;
+
+}
+
+
+
+.divider::before,
+
+.divider::after{
+
+    content:"";
+
+    flex:1;
+
+    height:1px;
+
+    background:rgba(255,255,255,.35);
+
+}
+
+
+.divider span{
+
+    margin:0 12px;
+
+    font-size:14px;
+
+}
+
+
+/*================ SOCIAL LOGIN =================*/
+
+
+.social-login{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:15px;
+
+    margin-bottom:20px;
+
+}
+
+
+
+.social-login button{
+
+    width:52px;
+
+    height:52px;
+
+    border-radius:12px;
+
+    border:1px solid rgba(255,255,255,.35);
+
+    background:rgba(255,255,255,.10);
+
+    color:white;
+
+    font-size:23px;
+
+}
+
+
+
+.social-login button:hover{
+
+    background:#f7c948;
+
+    color:black;
+
+}
+
+
+
+/*================ REGISTER =================*/
+
+
+.register{
+
+    text-align:center;
+
+    color:white;
+
+    font-size:15px;
+
+}
+
+
+.register a{
+
+    color:#f7c948;
+
+    text-decoration:none;
+
+    font-weight:bold;
+
+}
+
+
+
+/*================ RESPONSIVE =================*/
+
+
+@media(max-width:768px){
+
+.login-box{
+
+    width:95%;
+
+    padding:25px;
+
+}
+
+
+.login-box h1{
+
+    font-size:32px;
+
+}
+
+.login-box p{
+
+    font-size:17px;
+
+}
+
+}
+
+/*================ SERVICE SECTION ================*/
+
+.service-section{
+    width:100%;
+    background:#07111f;
+    display:flex;
+    justify-content:space-evenly;
+    align-items:center;
+    padding:25px 40px;
+    border-top:1px solid rgba(255,255,255,.08);
+    border-bottom:1px solid rgba(255,255,255,.08);
+}
+
+.service-box{
+    display:flex;
+    align-items:center;
+    gap:15px;
+    padding:0px 25px;
+}
+
+.service-box:not(:last-child){
+    border-right:1px solid rgba(255,255,255,.12);
+}
+
+.service-icon{
+    width:50px;
+    height:50px;
+    border:2px solid #f4c542;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:24px;
+    color:#f4c542;
+}
+
+.service-text h3{
+    color:#fff;
+    font-size:18px;
+    margin-bottom:4px;
+}
+
+.service-text p{
+    color:#bdbdbd;
+    font-size:14px;
+}

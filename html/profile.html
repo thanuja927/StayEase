@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>StayEase | My Profile</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/profile.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body>
+
+    <!--================ NAVBAR ================-->
+
+    <nav class="navbar">
+
+        <div class="logo">
+
+            <h1>StayEase</h1>
+
+            <span>Luxury Hotel Booking</span>
+
+        </div>
+
+        <ul class="nav-links">
+
+            <li><a href="index.html">Home</a></li>
+
+            <li><a href="hotels.html">Hotels</a></li>
+
+            <li><a href="rooms.html">Rooms</a></li>
+
+            <li><a href="login.html">login</a></li>
+
+            <li><a href="register.html">register</a></li>
+
+            <li><a href="payment.html">payment</a></li>
+
+            <li><a href="profile.html">profile</a></li>
+
+        </ul>
+
+        <div class="nav-right">
+
+            <button class="notification-btn">
+
+                <i class="fa-regular fa-bell"></i>
+
+                <span class="dot"></span>
+
+            </button>
+
+            <div class="top-profile">
+
+                <img src="../images/profile1.jpg" alt="Profile">
+
+                <div>
+
+                    <h4>Thanuja</h4>
+
+                    <p>Premium Member</p>
+
+                </div>
+
+                <i class="fa-solid fa-chevron-down"></i>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+    <!--================ MAIN LAYOUT ================-->
+
+    <div class="dashboard-layout">
+
+        <!--================ SIDEBAR ================-->
+
+        <aside class="sidebar">
+
+            <div class="sidebar-top">
+
+                <div class="sidebar-logo">
+
+                    <h2>STAYEASE</h2>
+
+                    <span>LUXURY STAYS</span>
+
+                </div>
+
+                <ul class="sidebar-menu">
+
+                    <li class="active">
+
+                        <i class="fa-regular fa-user"></i>
+
+                        <span>My Profile</span>
+
+                    </li>
+
+                    <li>
+
+                        <i class="fa-regular fa-calendar-check"></i>
+
+                        <span>Bookings</span>
+
+                    </li>
+
+                    <li>
+
+                        <i class="fa-regular fa-heart"></i>
+
+                        <span>Favourites</span>
+
+                    </li>
+
+                    <li>
+
+                        <i class="fa-regular fa-credit-card"></i>
+
+                        <span>Payments</span>
+
+                    </li>
+
+                    <li>
+
+                        <i class="fa-solid fa-gear"></i>
+
+                        <span>Settings</span>
+
+                    </li>
+
+                    <li>
+
+                        <i class="fa-solid fa-headset"></i>
+
+                        <span>Support</span>
+
+                    </li>
+
+                </ul>
+
+            </div>
+
+            <button class="logout-btn">
+
+                <i class="fa-solid fa-right-from-bracket"></i>
+
+                Logout
+
+            </button>
+
+        </aside>
+
+        <!--================ MAIN CONTENT ================-->
+
+        <main class="dashboard-content">
+
+            <!--================ HERO CARD ================-->
+
+            <section class="hero-card">
+
+                <div class="hero-left">
+
+                    <div class="profile-wrapper">
+
+                        <img src="../images/profile1.jpg" alt="Profile">
+
+                        <button class="camera-btn">
+
+                            <i class="fa-solid fa-camera"></i>
+
+                        </button>
+
+                    </div>
+
+                    <div class="hero-text">
+
+                        <span class="welcome-tag">
+
+                            Welcome Back 👋
+
+                        </span>
+
+                        <h1>
+
+                            Thanuja S
+
+                        </h1>
+
+                        <p>
+
+                            Manage your StayEase account effortlessly and
+                            enjoy premium stays with exclusive rewards.
+
+                        </p>
+
+                        <button class="edit-profile">
+
+                            <i class="fa-solid fa-pen"></i>
+
+                            Edit Profile
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+                <div class="hero-right">
+
+                    <div class="stat-card">
+
+                        <i class="fa-regular fa-calendar"></i>
+
+                        <h2 class="counter" data-target="12">0</h2>
+
+                        <span>Total Bookings</span>
+
+                    </div>
+
+                    <div class="stat-card">
+
+                        <i class="fa-solid fa-bed"></i>
+
+                        <h2 class="counter" data-target="2">0</h2>
+
+                        <span>Upcoming Stays</span>
+
+                    </div>
+
+                    <div class="stat-card">
+
+                        <i class="fa-solid fa-star"></i>
+
+                        <h2 class="counter" data-target="850">0</h2>
+
+                        <span>Reward Points</span>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+            <!--================ DASHBOARD GRID ================-->
+
+            <section class="dashboard-grid">
+                                <!--================ PERSONAL INFORMATION =================-->
+
+                <div class="info-card">
+
+                    <div class="section-heading">
+
+                        <h2>Personal Information</h2>
+
+                        <button class="small-btn">
+
+                            <i class="fa-solid fa-pen"></i>
+
+                            Edit
+
+                        </button>
+
+                    </div>
+
+                    <div class="info-list">
+
+                        <div class="info-row">
+
+                            <span>Full Name</span>
+
+                            <strong>Thanuja S</strong>
+
+                        </div>
+
+                        <div class="info-row">
+
+                            <span>Email Address</span>
+
+                            <strong>thanuja@gmail.com</strong>
+
+                        </div>
+
+                        <div class="info-row">
+
+                            <span>Phone Number</span>
+
+                            <strong>+91 98765 43210</strong>
+
+                        </div>
+
+                        <div class="info-row">
+
+                            <span>Date of Birth</span>
+
+                            <strong>15 May 2003</strong>
+
+                        </div>
+
+                        <div class="info-row">
+
+                            <span>Gender</span>
+
+                            <strong>Female</strong>
+
+                        </div>
+
+                        <div class="info-row">
+
+                            <span>Location</span>
+
+                            <strong>Bangalore, India</strong>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!--================ BOOKINGS =================-->
+
+                <div class="booking-card">
+
+                    <div class="section-heading">
+
+                        <h2>My Bookings</h2>
+
+                        <a href="#">View All</a>
+
+                    </div>
+
+                    <div class="booking-list">
+
+                        <div class="booking-item">
+
+                            <img src="../images/hotelpic1.jpg" alt="Grand Palace Hotel">
+
+                            <div class="booking-details">
+
+                                <h3>Grand Palace Hotel</h3>
+
+                                <p>15 Aug 2026 • 17 Aug 2026</p>
+
+                                <small>Deluxe Room</small>
+
+                            </div>
+
+                            <span class="status confirmed">
+
+                                Confirmed
+
+                            </span>
+
+                        </div>
+
+                        <div class="booking-item">
+
+                            <img src="../images/hotelpic2.jpg" alt="Ocean View Resort">
+
+                            <div class="booking-details">
+
+                                <h3>Ocean View Resort</h3>
+
+                                <p>22 Aug 2026 • 24 Aug 2026</p>
+
+                                <small>Luxury Suite</small>
+
+                            </div>
+
+                            <span class="status upcoming">
+
+                                Upcoming
+
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+
+            <!--================ QUICK ACTIONS =================-->
+
+            <section class="feature-grid">
+
+                <div class="feature-card">
+
+                    <div class="feature-icon">
+
+                        <i class="fa-regular fa-heart"></i>
+
+                    </div>
+
+                    <h3>Favourite Hotels</h3>
+
+                    <p>
+
+                        View and manage your saved luxury hotels.
+
+                    </p>
+
+                    <button>
+
+                        Explore
+
+                    </button>
+
+                </div>
+
+
+
+                <div class="feature-card">
+
+                    <div class="feature-icon">
+
+                        <i class="fa-regular fa-credit-card"></i>
+
+                    </div>
+
+                    <h3>Payment Methods</h3>
+
+                    <p>
+
+                        Securely manage your saved payment options.
+
+                    </p>
+
+                    <button>
+
+                        Manage
+
+                    </button>
+
+                </div>
+
+
+
+                <div class="feature-card">
+
+                    <div class="feature-icon">
+
+                        <i class="fa-solid fa-gear"></i>
+
+                    </div>
+
+                    <h3>Account Settings</h3>
+
+                    <p>
+
+                        Update preferences and notification settings.
+
+                    </p>
+
+                    <button>
+
+                        Settings
+
+                    </button>
+
+                </div>
+
+
+
+                <div class="feature-card">
+
+                    <div class="feature-icon">
+
+                        <i class="fa-solid fa-headset"></i>
+
+                    </div>
+
+                    <h3>Support Center</h3>
+
+                    <p>
+
+                        Need help? Our team is here 24×7.
+
+                    </p>
+
+                    <button>
+
+                        Contact
+
+                    </button>
+
+                </div>
+
+            </section>
+
+
+
+            <!--================ FOOTER =================-->
+
+            <footer class="dashboard-footer">
+
+                <p>
+
+                    © 2026 StayEase. All Rights Reserved.
+
+                </p>
+
+            </footer>
+
+        </main>
+
+    </div>
+
+    <!--================ JAVASCRIPT =================-->
+
+    <script src="../js/profile.js"></script>
+
+</body>
+
+</html>

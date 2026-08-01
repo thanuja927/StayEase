@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Login | StayEase</title>
+
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/login.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav>
+
+        <div class="logo">🏨 StayEase</div>
+
+        <ul>
+
+            <li><a href="index.html">Home</a></li>
+            <li><a href="hotels.html">Hotels</a></li>
+            <li><a href="room-details.html">Rooms</a></li>
+            <li><a class="active" href="login.html">Login</a></li>
+            <li><a href="register.html">Register</a></li>
+            <li><a href="payment.html">Profile</a></li>
+            <li><a href="profile.html">Payment</a></li>
+
+        </ul>
+
+    </nav>
+
+    <!-- Login -->
+
+    <section class="login-section">
+
+        <div class="login-box">
+
+            <h1>Welcome Back</h1>
+
+            <p>
+                Sign in to continue your
+                <span>StayEase</span> journey.
+            </p>
+
+            <form id="loginForm">
+
+                <label>Email Address</label>
+
+                <div class="input-box">
+
+                    <i class="fa-solid fa-user"></i>
+
+                    <input
+                        type="email"
+                        id="email"
+                        placeholder="Enter your email">
+
+                </div>
+
+
+                <label>Password</label>
+
+                <div class="input-box">
+
+                    <i class="fa-solid fa-lock"></i>
+
+                    <input
+                        type="password"
+                        id="password"
+                        placeholder="Enter your password">
+
+                    <i
+                        class="fa-solid fa-eye eye"
+                        onclick="togglePassword()">
+                    </i>
+
+                </div>
+
+                <div class="options">
+
+                    <label>
+
+                        <input type="checkbox">
+
+                        Remember Me
+
+                    </label>
+
+                    <a href="#">Forgot Password?</a>
+
+                </div>
+
+                <button type="submit">
+
+                    LOGIN
+
+                </button>
+
+            </form>
+
+            <div class="divider">
+
+                <span>OR</span>
+
+            </div>
+
+            <div class="social-login">
+
+                <button><i class="fab fa-google"></i></button>
+
+                <button><i class="fab fa-facebook-f"></i></button>
+
+                <button><i class="fab fa-apple"></i></button>
+
+            </div>
+
+            <p class="register">
+
+                Don't have an account?
+
+                <a href="register.html">
+
+                    Register Now
+
+                </a>
+
+            </p>
+
+        </div>
+
+    </section>
+
+    <section class="service-section">
+
+    <div class="service-box">
+        <div class="service-icon">🛡️</div>
+        <div class="service-text">
+            <h3>Best Price Guarantee</h3>
+            <p>We offer the best prices</p>
+        </div>
+    </div>
+
+    <div class="service-box">
+        <div class="service-icon">🔒</div>
+        <div class="service-text">
+            <h3>Secure Booking</h3>
+            <p>Your data is safe with us</p>
+        </div>
+    </div>
+
+    <div class="service-box">
+        <div class="service-icon">🎧</div>
+        <div class="service-text">
+            <h3>24/7 Support</h3>
+            <p>We are here to help</p>
+        </div>
+    </div>
+
+    <div class="service-box">
+        <div class="service-icon">👑</div>
+        <div class="service-text">
+            <h3>Luxury Experience</h3>
+            <p>Make your stay memorable</p>
+        </div>
+    </div>
+
+</section>
+
+    <script src="../js/login.js"></script>
+
+</body>
+
+</html>

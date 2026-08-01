@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Room Details | StayEase</title>
+
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/room-details.css">
+
+</head>
+
+<body>
+
+    <nav>
+
+        <div class="logo">🏨 StayEase</div>
+
+        <ul>
+
+            <li><a href="index.html">Home</a></li>
+
+            <li><a href="hotels.html">Hotels</a></li>
+
+            <li><a href="room-details.html">Rooms</a></li>
+
+            <li><a href="login.html">Login</a></li>
+
+            <li><a href="register.html">Register</a></li>
+
+            <li><a href="payment.html">Payment</a></li>
+
+            <li><a href="profile.html">Profile</a></li>
+
+        </ul>
+
+    </nav>
+
+    <div class="container">
+
+        <div class="hotel-box">
+
+            <div class="hotel-image">
+
+                <img id="hotelImage">
+
+            </div>
+
+            <div class="hotel-info">
+
+                <h1 id="hotelName"></h1>
+
+                <p class="city">📍 <span id="hotelCity"></span></p>
+
+                <div class="rating" id="hotelRating"></div>
+
+                <div class="price" id="hotelPrice"></div>
+
+                <p class="description" id="hotelDescription"></p>
+
+                <div class="amenities">
+
+                    <div>📶 Free Wi-Fi</div>
+
+                    <div>🏊 Swimming Pool</div>
+
+                    <div>🍽 Restaurant</div>
+
+                    <div>🚗 Parking</div>
+
+                    <div>☕ Breakfast</div>
+
+                    <div>💪 Fitness Centre</div>
+
+                    <div>❄ Air Conditioning</div>
+
+                    <div>🎧 24×7 Support</div>
+
+                </div>
+
+            </div>
+
+            <div class="booking-card">
+
+                <h2>Book Your Stay</h2>
+
+                <label>Check In</label>
+
+                <input type="date" id="checkIn">
+
+                <label>Check Out</label>
+
+                <input type="date" id="checkOut">
+
+                <label>Guests</label>
+
+                <select id="guests">
+                    <option value="">Select Guests</option>
+
+                    <option>1 Guest</option>
+
+                    <option>2 Guests</option>
+
+                    <option>3 Guests</option>
+
+                    <option>4 Guests</option>
+
+                </select>
+
+                <button class="book-btn" onclick="goToRooms()">
+                    Book Now
+                </button>
+
+            </div>
+
+        </div>
+    </div>
+
+    <!-- ================= ROOM TYPES ================= -->
+
+    <section class="room-why" id="rooms">
+
+        <div class="rooms-section">
+
+            <h2 class="section-title">Choose Your Room</h2>
+
+            <div class="room-container">
+                <!-- Your room cards -->
+                <div class="room-card">
+
+                    <img src="../images/room1.jpg">
+
+                    <h3>Standard Room</h3>
+
+                    <p class="room-size">🛏 King Size Bed</p>
+
+                    <p class="room-size">👤 2 Guests</p>
+
+                    <p class="room-size">📐 280 sq.ft</p>
+
+                    <h4>₹2500 / Night</h4>
+
+                    <button onclick="window.location.href='login.html'">
+    Reserve Room
+</button>
+
+                </div>
+
+                <div class="room-card">
+
+                    <img src="../images/room2.jpg">
+
+                    <h3>Deluxe Room</h3>
+
+                    <p class="room-size">🛏 King Size Bed</p>
+
+                    <p class="room-size">👤 3 Guests</p>
+
+                    <p class="room-size">📐 350 sq.ft</p>
+
+                    <h4>₹3500 / Night</h4>
+
+                    <button onclick="window.location.href='login.html'">
+    Reserve Room
+</button>
+
+                </div>
+
+                <div class="room-card">
+
+                    <img src="../images/room3.jpg">
+
+                    <h3>Luxury Suite</h3>
+
+                    <p class="room-size">🛏 King Size Bed</p>
+
+                    <p class="room-size">👤 4 Guests</p>
+
+                    <p class="room-size">📐 500 sq.ft</p>
+
+                    <h4>₹5500 / Night</h4>
+
+                    <button onclick="window.location.href='login.html'">
+    Reserve Room
+</button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="why-section">
+
+            <h2>Why Choose Us?</h2>
+
+            <ul>
+                <li>✔ Best Price Guarantee</li>
+                <li>✔ Free Cancellation</li>
+                <li>✔ Instant Booking</li>
+                <li>✔ Secure Payment</li>
+                <li>✔ 24×7 Customer Support</li>
+                <li>✔ Premium Luxury Rooms</li>
+            </ul>
+
+        </div>
+
+    </section>
+
+    <!-- ================= CUSTOMER REVIEWS ================= -->
+
+    <section class="reviews">
+
+        <h2 class="section-title">Guest Reviews</h2>
+
+        <div class="review-container">
+
+            <div class="review-card">
+
+                <div class="stars">⭐⭐⭐⭐⭐</div>
+
+                <p>
+
+                    "The rooms were extremely clean and spacious.
+                    The staff was very friendly and the breakfast
+                    was delicious."
+
+                </p>
+
+                <h4>- Rahul Sharma</h4>
+
+            </div>
+
+            <div class="review-card">
+
+                <div class="stars">⭐⭐⭐⭐☆</div>
+
+                <p>
+
+                    "Excellent location with beautiful interiors.
+                    Perfect place for a family vacation."
+
+                </p>
+
+                <h4>- Priya Nair</h4>
+
+            </div>
+
+            <div class="review-card">
+
+                <div class="stars">⭐⭐⭐⭐⭐</div>
+
+                <p>
+
+                    "One of the best hotels I've stayed in.
+                    Highly recommended!"
+
+                </p>
+
+                <h4>- Arjun Verma</h4>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <script src="../js/common.js"></script>
+    <script src="../js/room-details.js"></script>
+</body>
+
+</html>

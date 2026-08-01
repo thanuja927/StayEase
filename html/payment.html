@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Payment | StayEase</title>
+
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/payment.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+
+<body>
+
+    <!--================ NAVBAR =================-->
+
+    <nav class="navbar">
+
+        <div class="logo">
+            🏨 StayEase
+        </div>
+
+        <ul class="nav-links">
+
+            <li><a href="index.html">Home</a></li>
+            <li><a href="hotels.html">Hotels</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="register.html">Register</a></li>
+            <li><a href="payment.html" class="active">Payment</a></li>
+            <li><a href="profile.html">Profile</a></li>
+
+        </ul>
+
+    </nav>
+
+    <!--================ PAYMENT SECTION =================-->
+
+    <section class="payment-section">
+
+        <div class="payment-container">
+
+            <!--================ BOOKING SUMMARY =================-->
+
+            <div class="booking-card">
+
+                <h2>
+                    <i class="fa-solid fa-clipboard-list"></i>
+                    Booking Summary
+                </h2>
+
+                <div class="summary">
+
+                    <div class="item">
+
+                        <i class="fa-solid fa-hotel"></i>
+
+                        <div>
+
+                            <h4>Hotel</h4>
+
+                            <p>Grand Palace Hotel</p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="item">
+
+                        <i class="fa-solid fa-bed"></i>
+
+                        <div>
+
+                            <h4>Room Type</h4>
+
+                            <p>Luxury Suite</p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="item">
+
+                        <i class="fa-solid fa-calendar-days"></i>
+
+                        <div>
+
+                            <h4>Check-In</h4>
+
+                            <p>10 August 2026</p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="item">
+
+                        <i class="fa-solid fa-calendar-days"></i>
+
+                        <div>
+
+                            <h4>Check-Out</h4>
+
+                            <p>12 August 2026</p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="item">
+
+                        <i class="fa-solid fa-user-group"></i>
+
+                        <div>
+
+                            <h4>Guests</h4>
+
+                            <p>2 Adults</p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <hr>
+
+                <div class="total">
+
+                    <h3>Total Amount</h3>
+
+                    <h1>₹11,000</h1>
+
+                </div>
+
+            </div>
+
+            <!--================ PAYMENT CARD =================-->
+
+            <div class="payment-card">
+
+                <h2>
+
+                    <i class="fa-solid fa-credit-card"></i>
+
+                    Payment Details
+
+                </h2>
+
+                <div class="line"></div>
+
+                <form id="paymentForm">
+
+                    <label class="title">
+                        Select Payment Method
+                    </label>
+
+                    <div class="payment-options">
+
+                        <label class="option active">
+
+                            <input type="radio" name="payment" value="Card" checked>
+
+                            <i class="fa-regular fa-credit-card"></i>
+
+                            <span>Credit / Debit Card</span>
+
+                        </label>
+
+                        <label class="option">
+
+                            <input type="radio" name="payment" value="UPI">
+
+                            <i class="fa-brands fa-google-pay"></i>
+
+                            <span>UPI</span>
+
+                        </label>
+
+                        <label class="option">
+
+                            <input type="radio" name="payment" value="Net Banking">
+
+                            <i class="fa-solid fa-building-columns"></i>
+
+                            <span>Net Banking</span>
+
+                        </label>
+
+                        <label class="option">
+
+                            <input type="radio" name="payment" value="Cash">
+
+                            <i class="fa-solid fa-money-bill-wave"></i>
+
+                            <span>Cash at Hotel</span>
+
+                        </label>
+
+                    </div>
+
+                    <!--================ CARD PAYMENT =================-->
+
+                    <div id="cardPayment" class="payment-form active">
+
+                        <div class="input-box">
+
+                            <label>Card Holder Name</label>
+
+                            <input type="text" id="cardHolder" placeholder="Enter card holder name">
+
+                        </div>
+
+                        <div class="input-box">
+
+                            <label>Card Number</label>
+
+                            <input type="text" id="cardNumber" maxlength="16" placeholder="1234 5678 9012 3456">
+
+                        </div>
+
+                        <div class="row">
+
+                            <div class="input-box">
+
+                                <label>Expiry Date</label>
+
+                                <input type="text" id="expiry" placeholder="MM/YY">
+
+                            </div>
+
+                            <div class="input-box">
+
+                                <label>CVV</label>
+
+                                <input type="password" id="cvv" maxlength="3" placeholder="123">
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!--================ UPI PAYMENT =================-->
+
+                    <div id="upiPayment" class="payment-form">
+
+                        <div class="input-box">
+
+                            <label>UPI ID</label>
+
+                            <input type="text" id="upiId" placeholder="example@ybl">
+
+                        </div>
+
+                    </div>
+
+                    <!--================ NET BANKING =================-->
+
+                    <div id="bankPayment" class="payment-form">
+
+                        <div class="input-box">
+
+                            <label>Select Bank</label>
+
+                            <select id="bank">
+
+                                <option value="">Choose Bank</option>
+                                <option>State Bank of India</option>
+                                <option>HDFC Bank</option>
+                                <option>ICICI Bank</option>
+                                <option>Axis Bank</option>
+                                <option>Canara Bank</option>
+
+                            </select>
+
+                        </div>
+
+                    </div>
+
+                    <!--================ CASH AT HOTEL =================-->
+
+                    <div id="cashPayment" class="payment-form">
+
+                        <div class="cash-box">
+
+                            <i class="fa-solid fa-circle-check"></i>
+
+                            <h3>Cash at Hotel</h3>
+
+                            <p>
+                                No advance payment is required.<br><br>
+                                Please pay during hotel check-in.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                    <!--================ BUTTON =================-->
+
+                    <button type="submit" class="pay-btn">
+
+                        <i class="fa-solid fa-lock"></i>
+
+                        Confirm Payment
+
+                    </button>
+
+                    <!--================ SECURE PAYMENT =================-->
+
+                    <div class="secure">
+
+                        <i class="fa-solid fa-shield-halved"></i>
+
+                        <div>
+
+                            <h4>100% Secure Payment</h4>
+
+                            <p>Your payment information is safe with us.</p>
+
+                        </div>
+
+                    </div>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <script src="../js/payment.js"></script>
+
+</body>
+
+</html>
