@@ -5,7 +5,7 @@ const hotels = {
         city: "Bangalore",
         rating: "⭐⭐⭐⭐⭐",
         price: "₹3500 / Night",
-        image: "../images/hotelpic1.jpg",
+        image: "images/hotelpic1.jpg",
         description: "Experience luxury and comfort in the heart of Bangalore with spacious rooms, premium amenities and exceptional hospitality."
     },
 
@@ -14,7 +14,7 @@ const hotels = {
         city: "Goa",
         rating: "⭐⭐⭐⭐☆",
         price: "₹4200 / Night",
-        image: "../images/hotelpic2.jpg",
+        image: "images/hotelpic2.jpg",
         description: "Enjoy breathtaking sea views, private beach access and unforgettable holiday experiences."
     },
 
@@ -23,7 +23,7 @@ const hotels = {
         city: "Ooty",
         rating: "⭐⭐⭐⭐⭐",
         price: "₹2900 / Night",
-        image: "../images/hotelpic3.jpg",
+        image: "images/hotelpic3.jpg",
         description: "Relax amidst beautiful hills, fresh air and peaceful surroundings."
     },
 
@@ -32,7 +32,7 @@ const hotels = {
         city: "Delhi",
         rating: "⭐⭐⭐☆☆",
         price: "₹2500 / Night",
-        image: "../images/hotelpic4.jpg",
+        image: "images/hotelpic4.jpg",
         description: "Comfortable rooms with easy access to famous attractions and business centres."
     },
 
@@ -41,7 +41,7 @@ const hotels = {
         city: "Mumbai",
         rating: "⭐⭐⭐⭐⭐",
         price: "₹4500 / Night",
-        image: "../images/hotelpic5.jpg",
+        image: "images/hotelpic5.jpg",
         description: "Luxury stay in the city of dreams with premium services and sea views."
     },
 
@@ -50,7 +50,7 @@ const hotels = {
         city: "Hyderabad",
         rating: "⭐⭐⭐⭐☆",
         price: "₹3200 / Night",
-        image: "../images/hotelpic6.jpg",
+        image: "images/hotelpic6.jpg",
         description: "Traditional hospitality blended with modern comfort."
     },
 
@@ -59,7 +59,7 @@ const hotels = {
         city: "Jaipur",
         rating: "⭐⭐⭐⭐⭐",
         price: "₹3800 / Night",
-        image: "../images/hotelpic7.jpg",
+        image: "images/hotelpic7.jpg",
         description: "Experience royal living in the Pink City."
     },
 
@@ -68,7 +68,7 @@ const hotels = {
         city: "Chennai",
         rating: "⭐⭐⭐⭐☆",
         price: "₹3100 / Night",
-        image: "../images/hotelpic8.jpg",
+        image: "images/hotelpic8.jpg",
         description: "Beautiful coastal views with luxurious accommodation."
     },
 
@@ -77,7 +77,7 @@ const hotels = {
         city: "Coorg",
         rating: "⭐⭐⭐⭐⭐",
         price: "₹4000 / Night",
-        image: "../images/hotelpic9.jpg",
+        image: "images/hotelpic9.jpg",
         description: "Stay amidst lush green coffee plantations and scenic beauty."
     },
 
@@ -86,7 +86,7 @@ const hotels = {
         city: "Manali",
         rating: "⭐⭐⭐⭐☆",
         price: "₹3600 / Night",
-        image: "../images/hotelpic10.jpg",
+        image: "images/hotelpic10.jpg",
         description: "Enjoy breathtaking Himalayan views and cosy luxury rooms."
     }
 
@@ -123,7 +123,7 @@ else {
 
     document.getElementById("hotelDescription").innerHTML = "Experience luxury and comfort.";
 
-    document.getElementById("hotelImage").src = "../images/hotelpic1.jpg";
+    document.getElementById("hotelImage").src = "images/hotelpic1.jpg";
 
 
 }
