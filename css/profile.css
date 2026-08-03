@@ -317,6 +317,23 @@ body{
     color:#bea55d;
 
 }
+/* Sidebar Links */
+.sidebar-menu li a{
+    display:flex;
+    align-items:center;
+    gap:15px;
+    color:#ffffff;
+    text-decoration:none;
+    width:100%;
+}
+
+.sidebar-menu li a:visited{
+    color:#ffffff;
+}
+
+.sidebar-menu li a:hover{
+    color:#d4af37;
+}
 
 
 /*======================================================

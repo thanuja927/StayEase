@@ -13,11 +13,11 @@
     <link rel="stylesheet" href="css/profile.css">
 
     <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
 
     <!-- Font Awesome -->
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
 </head>
 
@@ -103,51 +103,59 @@
 
                 <ul class="sidebar-menu">
 
-                    <li class="active">
-
+                    <li>
+                        <a href="#personal-info">
                         <i class="fa-regular fa-user"></i>
 
                         <span>My Profile</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#bookings">
+                            <i class="fa-regular fa-calendar-check"></i>
+                            <span>Bookings</span>
+                        </a>
+                    </li>
 
                     </li>
 
                     <li>
-
-                        <i class="fa-regular fa-calendar-check"></i>
-
-                        <span>Bookings</span>
+                        <a href="#favourites">
+                            <i class="fa-regular fa-heart"></i>
+                            <span>Favourites</span>
+                        </a>
+                    </li>
 
                     </li>
 
                     <li>
-
-                        <i class="fa-regular fa-heart"></i>
-
-                        <span>Favourites</span>
+                        <a href="#payments">
+                            <i class="fa-regular fa-credit-card"></i>
+                            <span>Payments</span>
+                        </a>
+                    </li>
 
                     </li>
 
                     <li>
+                        <a href="#settings">
 
-                        <i class="fa-regular fa-credit-card"></i>
+                    <i class="fa-solid fa-gear"></i>
 
-                        <span>Payments</span>
-
-                    </li>
-
-                    <li>
-
-                        <i class="fa-solid fa-gear"></i>
-
-                        <span>Settings</span>
+                    <span>Settings</span>
+                    </a>
 
                     </li>
 
                     <li>
+                        <a href="#support">
 
-                        <i class="fa-solid fa-headset"></i>
+                            <i class="fa-solid fa-headset"></i>
 
-                        <span>Support</span>
+                            <span>Support</span>
+
+                        </a>
 
                     </li>
 
@@ -158,6 +166,7 @@
             <button class="logout-btn">
 
                 <i class="fa-solid fa-right-from-bracket"></i>
+
 
                 Logout
 
@@ -259,9 +268,9 @@
             <!--================ DASHBOARD GRID ================-->
 
             <section class="dashboard-grid">
-                                <!--================ PERSONAL INFORMATION =================-->
+                <!--================ PERSONAL INFORMATION =================-->
 
-                <div class="info-card">
+                <div class="info-card" id="personal-info">
 
                     <div class="section-heading">
 
@@ -335,7 +344,7 @@
 
                 <!--================ BOOKINGS =================-->
 
-                <div class="booking-card">
+                <div class="booking-card" id="bookings">
 
                     <div class="section-heading">
 
@@ -403,7 +412,7 @@
 
             <section class="feature-grid">
 
-                <div class="feature-card">
+                <div class="feature-card" id="favourites">
 
                     <div class="feature-icon">
 
@@ -419,7 +428,7 @@
 
                     </p>
 
-                    <button>
+                    <button onclick="window.location.href='favorites.html'">
 
                         Explore
 
@@ -429,7 +438,7 @@
 
 
 
-                <div class="feature-card">
+                <div class="feature-card" id="payments">
 
                     <div class="feature-icon">
 
@@ -445,7 +454,7 @@
 
                     </p>
 
-                    <button>
+                    <button onclick="window.location.href='payment.html'">
 
                         Manage
 
@@ -455,7 +464,7 @@
 
 
 
-                <div class="feature-card">
+                <div class="feature-card" id="settings">
 
                     <div class="feature-icon">
 
@@ -471,7 +480,7 @@
 
                     </p>
 
-                    <button>
+                    <button onclick="window.location.href='settings.html'">
 
                         Settings
 
@@ -481,7 +490,7 @@
 
 
 
-                <div class="feature-card">
+                <div class="feature-card" id="support">
 
                     <div class="feature-icon">
 
@@ -497,7 +506,7 @@
 
                     </p>
 
-                    <button>
+                    <button onclick="window.location.href='support.html'">
 
                         Contact
 

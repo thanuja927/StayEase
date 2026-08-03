@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>Account Settings | StayEase</title>
+
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/settings.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body>
+
+    <!--==================== NAVBAR ====================-->
+
+    <nav>
+
+        <div class="logo">
+
+            🏨 StayEase
+
+        </div>
+
+        <ul>
+
+            <li><a href="index.html">Home</a></li>
+
+            <li><a href="hotels.html">Hotels</a></li>
+
+            <li><a href="room-details.html">Rooms</a></li>
+
+            <li><a href="login.html">Login</a></li>
+
+            <li><a href="register.html">Register</a></li>
+
+            <li><a href="payment.html">Payment</a></li>
+
+            <li><a href="profile.html">Profile</a></li>
+
+        </ul>
+
+    </nav>
+
+
+    <!--==================== PAGE HEADER ====================-->
+
+    <section class="settings-header">
+
+        <span class="settings-tag">
+
+            ⚙️ Manage Your Account
+
+        </span>
+
+        <h1>
+
+            Account Settings
+
+        </h1>
+
+        <p>
+
+            Customize your StayEase account, security,
+            notifications and personal preferences.
+
+        </p>
+
+    </section>
+
+
+    <!--==================== SETTINGS ====================-->
+
+    <section class="settings-section">
+
+
+        <!--=========== NOTIFICATIONS ===========-->
+
+        <div class="settings-card">
+
+            <div class="settings-icon">
+
+                <i class="fa-regular fa-bell"></i>
+
+            </div>
+
+            <h2>
+
+                Notifications
+
+            </h2>
+
+            <p>
+
+                Choose which updates you want to receive.
+
+            </p>
+
+            <div class="setting-item">
+
+                <label>
+
+                    <input type="checkbox" checked>
+
+                    Email Notifications
+
+                </label>
+
+            </div>
+
+            <div class="setting-item">
+
+                <label>
+
+                    <input type="checkbox" checked>
+
+                    Booking Updates
+
+                </label>
+
+            </div>
+
+            <div class="setting-item">
+
+                <label>
+
+                    <input type="checkbox">
+
+                    Promotional Offers
+
+                </label>
+
+            </div>
+
+            <button class="save-btn">
+
+                Save Changes
+
+            </button>
+
+        </div>
+
+
+        <!--=========== SECURITY ===========-->
+
+        <div class="settings-card">
+
+            <div class="settings-icon">
+
+                <i class="fa-solid fa-lock"></i>
+
+            </div>
+
+            <h2>
+
+                Security
+
+            </h2>
+
+            <p>
+
+                Update your password to keep your account secure.
+
+            </p>
+
+            <input type="password"
+                placeholder="Current Password">
+
+            <input type="password"
+                placeholder="New Password">
+
+            <input type="password"
+                placeholder="Confirm Password">
+
+            <button class="save-btn">
+
+                Update Password
+
+            </button>
+
+        </div>
+                <!--=========== PREFERENCES ===========-->
+
+        <div class="settings-card">
+
+            <div class="settings-icon">
+
+                <i class="fa-solid fa-sliders"></i>
+
+            </div>
+
+            <h2>
+
+                Preferences
+
+            </h2>
+
+            <p>
+
+                Personalize your StayEase experience.
+
+            </p>
+
+            <div class="setting-select">
+
+                <label>Language</label>
+
+                <select>
+
+                    <option>English</option>
+                    <option>Kannada</option>
+                    <option>Hindi</option>
+
+                </select>
+
+            </div>
+
+            <div class="setting-select">
+
+                <label>Currency</label>
+
+                <select>
+
+                    <option>Indian Rupee (₹)</option>
+                    <option>US Dollar ($)</option>
+                    <option>Euro (€)</option>
+
+                </select>
+
+            </div>
+
+            <div class="setting-select">
+
+                <label>Theme</label>
+
+                <select>
+
+                    <option>Light</option>
+                    <option>Dark</option>
+
+                </select>
+
+            </div>
+
+            <button class="save-btn">
+
+                Save Preferences
+
+            </button>
+
+        </div>
+
+
+        <!--=========== PRIVACY ===========-->
+
+        <div class="settings-card">
+
+            <div class="settings-icon">
+
+                <i class="fa-solid fa-user-shield"></i>
+
+            </div>
+
+            <h2>
+
+                Privacy
+
+            </h2>
+
+            <p>
+
+                Manage your account privacy and security options.
+
+            </p>
+
+            <div class="setting-item">
+
+                <label>
+
+                    <input type="checkbox" checked>
+
+                    Two-Factor Authentication
+
+                </label>
+
+            </div>
+
+            <div class="setting-item">
+
+                <label>
+
+                    <input type="checkbox" checked>
+
+                    Login Alerts
+
+                </label>
+
+            </div>
+
+            <div class="setting-item">
+
+                <label>
+
+                    <input type="checkbox">
+
+                    Share Anonymous Usage Data
+
+                </label>
+
+            </div>
+
+            <button class="save-btn">
+
+                Save Privacy
+
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!--==================== FOOTER ====================-->
+
+    <footer class="settings-footer">
+
+        <p>
+
+            © 2026 StayEase | Luxury Hotel Reservation System
+
+        </p>
+
+    </footer>
+
+
+    <!--==================== JAVASCRIPT ====================-->
+
+    <script src="js/common.js"></script>
+    <script src="js/settings.js"></script>
+
+</body>
+
+</html>

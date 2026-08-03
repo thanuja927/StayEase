@@ -1,0 +1,485 @@
+/*======================================================
+                        BODY
+======================================================*/
+
+body{
+
+    margin:0;
+
+    font-family:Arial, Helvetica, sans-serif;
+
+    background:url("../images/backgrdimage21.jpg");
+
+    background-size:cover;
+
+    background-position:center;
+
+    background-attachment:fixed;
+
+}
+
+
+/*======================================================
+                    PAGE HEADER
+======================================================*/
+
+.settings-header{
+
+    width:100%;
+
+    max-width:1200px;
+
+    margin:120px auto 50px;
+
+    text-align:center;
+
+}
+
+.settings-tag{
+
+    display:inline-block;
+
+    background:#fff5d7;
+
+    color:#9b7600;
+
+    padding:8px 20px;
+
+    border-radius:30px;
+
+    font-size:14px;
+
+    font-weight:600;
+
+    margin-bottom:18px;
+
+}
+
+.settings-header h1{
+
+    font-size:42px;
+
+    color:#020303;
+
+    margin-bottom:15px;
+
+    font-family:'Poppins',sans-serif;
+
+    font-weight:700;
+
+}
+
+.settings-header p{
+
+    width:650px;
+
+    max-width:90%;
+
+    margin:auto;
+
+    color:#f7e224;
+
+    font-size:20px;
+
+    line-height:1.8;
+
+}
+
+
+/*======================================================
+                    SETTINGS GRID
+======================================================*/
+
+.settings-section{
+
+    width:90%;
+
+    max-width:1100px;
+
+    margin:0 auto 70px;
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:30px;
+
+}
+
+
+/*======================================================
+                    SETTINGS CARD
+======================================================*/
+
+.settings-card{
+
+    background:rgba(255,255,255,.95);
+
+    border-radius:25px;
+
+    padding:28px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.18);
+
+    transition:.35s;
+
+}
+
+.settings-card:hover{
+
+    transform:translateY(-5px);
+
+    box-shadow:0 18px 40px rgba(0,0,0,.15);
+
+}
+
+
+/*======================================================
+                    ICON
+======================================================*/
+
+.settings-icon{
+
+    width:65px;
+
+    height:65px;
+
+    border-radius:50%;
+
+    background:#d4af37;
+
+    color:#ffffff;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:28px;
+
+    margin-bottom:20px;
+
+}
+
+
+/*======================================================
+                    HEADINGS
+======================================================*/
+
+.settings-card h2{
+
+    margin:0;
+
+    color:#13294b;
+
+    font-size:28px;
+
+}
+
+.settings-card p{
+
+    margin:12px 0 22px;
+
+    color:#666;
+
+    line-height:1.7;
+
+    font-size:15px;
+
+}
+
+
+/*======================================================
+                CHECKBOX ITEMS
+======================================================*/
+
+.setting-item{
+
+    margin:14px 0;
+
+}
+
+.setting-item label{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    color:#444;
+
+    font-size:16px;
+
+    cursor:pointer;
+
+}
+
+.setting-item input{
+
+    width:18px;
+
+    height:18px;
+
+    accent-color:#d4af37;
+
+}
+
+/*======================================================
+                INPUT FIELDS
+======================================================*/
+
+.settings-card input[type="password"]{
+
+    width:100%;
+
+    height:48px;
+
+    margin-bottom:15px;
+
+    padding:0 15px;
+
+    border:1px solid #dcdcdc;
+
+    border-radius:12px;
+
+    outline:none;
+
+    font-size:15px;
+
+    transition:.3s;
+
+    box-sizing:border-box;
+
+}
+
+.settings-card input[type="password"]:focus{
+
+    border-color:#d4af37;
+
+    box-shadow:0 0 8px rgba(212,175,55,.25);
+
+}
+
+
+/*======================================================
+                SELECT BOXES
+======================================================*/
+
+.setting-select{
+
+    margin-bottom:18px;
+
+}
+
+.setting-select label{
+
+    display:block;
+
+    margin-bottom:8px;
+
+    color:#13294b;
+
+    font-size:15px;
+
+    font-weight:600;
+
+}
+
+.setting-select select{
+
+    width:100%;
+
+    height:48px;
+
+    padding:0 15px;
+
+    border:1px solid #dcdcdc;
+
+    border-radius:12px;
+
+    outline:none;
+
+    font-size:15px;
+
+    background:#ffffff;
+
+    transition:.3s;
+
+    cursor:pointer;
+
+    box-sizing:border-box;
+
+}
+
+.setting-select select:focus{
+
+    border-color:#d4af37;
+
+    box-shadow:0 0 8px rgba(212,175,55,.25);
+
+}
+
+
+/*======================================================
+                    BUTTON
+======================================================*/
+
+.save-btn{
+
+    width:100%;
+
+    height:48px;
+
+    margin-top:15px;
+
+    border:none;
+
+    border-radius:30px;
+
+    background:#d4af37;
+
+    color:#ffffff;
+
+    font-size:16px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.save-btn:hover{
+
+    background:#b8901f;
+
+    transform:translateY(-2px);
+
+}
+
+
+/*======================================================
+                    FOOTER
+======================================================*/
+
+.settings-footer{
+
+    margin-top:60px;
+
+    padding:20px;
+
+    text-align:center;
+
+    color:#ffffff;
+
+    font-size:14px;
+
+    background:rgba(0,0,0,.35);
+
+    backdrop-filter:blur(10px);
+
+}
+
+
+/*======================================================
+                RESPONSIVE
+======================================================*/
+
+@media(max-width:900px){
+
+    .settings-section{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .settings-card{
+
+        padding:25px;
+
+    }
+
+}
+
+
+@media(max-width:768px){
+
+    .settings-header h1{
+
+        font-size:34px;
+
+    }
+
+    .settings-header p{
+
+        width:100%;
+
+        font-size:16px;
+
+    }
+
+    .settings-icon{
+
+        width:58px;
+
+        height:58px;
+
+        font-size:24px;
+
+    }
+
+    .settings-card h2{
+
+        font-size:24px;
+
+    }
+
+}
+
+
+@media(max-width:500px){
+
+    .settings-section{
+
+        width:95%;
+
+        gap:20px;
+
+    }
+
+    .settings-card{
+
+        padding:20px;
+
+    }
+
+    .settings-header{
+
+        margin:100px auto 40px;
+
+    }
+
+    .settings-header h1{
+
+        font-size:30px;
+
+    }
+
+    .settings-tag{
+
+        font-size:13px;
+
+        padding:7px 16px;
+
+    }
+
+    .save-btn{
+
+        font-size:15px;
+
+    }
+
+}

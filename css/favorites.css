@@ -1,0 +1,609 @@
+/*======================================================
+                    BODY
+======================================================*/
+
+body{
+    margin:0;
+    font-family:Arial, Helvetica, sans-serif;
+
+    background:
+    linear-gradient(rgba(235, 225, 225, 0.25),
+    rgba(7, 6, 6, 0.25)),
+    url("../images/backgrdimage21.jpg");
+
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed;
+}
+
+
+/*======================================================
+                    HEADER
+======================================================*/
+
+.favorite-header{
+
+    width:90%;
+    max-width:1200px;
+
+    margin:120px auto 60px;
+
+    text-align:center;
+
+}
+
+.favorite-tag{
+
+    display:inline-block;
+
+    padding:10px 22px;
+
+    border-radius:30px;
+
+    background:#fff5d7;
+
+    color:#b8860b;
+
+    font-size:15px;
+
+    font-weight:600;
+
+}
+
+.favorite-header h1{
+
+    margin:20px 0 15px;
+
+    font-size:48px;
+
+    color:#090a0e;
+
+    font-weight:700;
+
+}
+
+.favorite-header p{
+
+    width:700px;
+    max-width:95%;
+
+    margin:auto;
+
+    font-size:18px;
+
+    line-height:1.8;
+
+    color:#ffffff;
+
+}
+
+
+/*======================================================
+                FAVORITES SECTION
+======================================================*/
+
+.favorite-section{
+
+    width:90%;
+    max-width:1300px;
+
+    margin:40px auto 80px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:35px;
+
+}
+
+
+/*======================================================
+                FAVORITE CARD
+======================================================*/
+
+.favorite-card{
+
+    background:rgba(255,255,255,.93);
+
+    border-radius:25px;
+
+    padding:28px 35px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    box-shadow:0 12px 35px rgba(0,0,0,.15);
+
+    transition:.35s;
+
+}
+
+.favorite-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 18px 45px rgba(0,0,0,.22);
+
+}
+
+
+/*======================================================
+                    LEFT SIDE
+======================================================*/
+
+.favorite-left{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:28px;
+
+    width:65%;
+
+}
+
+
+/*======================================================
+                    HOTEL IMAGE
+======================================================*/
+
+.favorite-image{
+
+    flex-shrink:0;
+
+}
+
+.favorite-image img{
+
+    width:220px;
+
+    height:155px;
+
+    object-fit:cover;
+
+    border-radius:20px;
+
+    transition:.35s;
+
+}
+
+.favorite-card:hover .favorite-image img{
+
+    transform:scale(1.05);
+
+}
+
+
+/*======================================================
+                    HOTEL INFO
+======================================================*/
+
+.favorite-info{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:10px;
+
+}
+
+.favorite-info h2{
+
+    margin:0;
+
+    font-size:34px;
+
+    color:#16213e;
+
+}
+
+.location{
+
+    margin:0;
+
+    color:#666;
+
+    font-size:18px;
+
+}
+
+.location i{
+
+    color:#d4af37;
+
+    margin-right:6px;
+
+}
+
+.rating{
+
+    font-size:22px;
+
+}
+
+.favorite-info h3{
+
+    margin:5px 0 0;
+
+    color:#d4af37;
+
+    font-size:30px;
+
+}
+
+/*======================================================
+                    RIGHT SIDE
+======================================================*/
+
+.favorite-right{
+
+    width:260px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:flex-start;
+
+    gap:18px;
+
+}
+
+.favorite-right h4{
+
+    margin:0;
+
+    font-size:20px;
+
+    color:#16213e;
+
+    font-weight:700;
+
+}
+
+
+/*======================================================
+                HOTEL FEATURES
+======================================================*/
+
+.hotel-features{
+
+    list-style:none;
+
+    padding:0;
+
+    margin:0;
+
+    width:100%;
+
+}
+
+.hotel-features li{
+
+    margin:10px 0;
+
+    color:#555;
+
+    font-size:16px;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+}
+
+.hotel-features i{
+
+    color:#d4af37;
+
+    width:20px;
+
+}
+
+
+/*======================================================
+                    BUTTONS
+======================================================*/
+
+.view-btn{
+
+    width:190px;
+
+    height:48px;
+
+    border:none;
+
+    border-radius:30px;
+
+    background:#d4af37;
+
+    color:#fff;
+
+    font-size:16px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.view-btn:hover{
+
+    background:#b8901f;
+
+    transform:translateY(-3px);
+
+}
+
+.remove-btn{
+
+    width:190px;
+
+    height:48px;
+
+    border:2px solid #d9534f;
+
+    background:#fff;
+
+    color:#d9534f;
+
+    border-radius:30px;
+
+    font-size:16px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.remove-btn:hover{
+
+    background:#d9534f;
+
+    color:#fff;
+
+    transform:translateY(-3px);
+
+}
+
+
+/*======================================================
+                EMPTY FAVORITES
+======================================================*/
+
+.empty-favorites{
+
+    display:block;
+
+    width:50%;
+
+    max-width:900px;
+
+    margin:60px auto;
+
+    padding:60px;
+
+    text-align:center;
+
+    background:rgba(255,255,255,.92);
+
+    border-radius:25px;
+
+    box-shadow:0 12px 30px rgba(0,0,0,.15);
+
+}
+
+.empty-favorites i{
+
+    font-size:70px;
+
+    color:#d4af37;
+
+}
+
+.empty-favorites h2{
+
+    margin:20px 0;
+
+    font-size:34px;
+
+    color:#16213e;
+
+}
+
+.empty-favorites p{
+
+    width:80%;
+
+    margin:auto;
+
+    color:#666;
+
+    line-height:1.8;
+
+}
+
+.empty-favorites button{
+
+    margin-top:30px;
+
+    width:200px;
+
+    height:50px;
+
+    border:none;
+
+    border-radius:30px;
+
+    background:#d4af37;
+
+    color:#fff;
+
+    font-size:16px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.empty-favorites button:hover{
+
+    background:#b8901f;
+
+}
+
+
+/*======================================================
+                    FOOTER
+======================================================*/
+
+.favorite-footer{
+
+    margin-top:70px;
+
+    padding:25px;
+
+    text-align:center;
+
+    color:#fff;
+
+    font-size:15px;
+
+    background:rgba(0,0,0,.35);
+
+    backdrop-filter:blur(10px);
+
+}
+
+
+/*======================================================
+                RESPONSIVE
+======================================================*/
+
+@media(max-width:992px){
+
+    .favorite-card{
+
+        flex-direction:column;
+
+        align-items:flex-start;
+
+        gap:25px;
+
+    }
+
+    .favorite-left{
+
+        width:100%;
+
+    }
+
+    .favorite-right{
+
+        width:100%;
+
+        align-items:flex-start;
+
+    }
+
+}
+
+
+@media(max-width:768px){
+
+    .favorite-left{
+
+        flex-direction:column;
+
+        align-items:flex-start;
+
+    }
+
+    .favorite-image img{
+
+        width:100%;
+
+        max-width:380px;
+
+        height:220px;
+
+    }
+
+    .favorite-info h2{
+
+        font-size:28px;
+
+    }
+
+    .favorite-info h3{
+
+        font-size:24px;
+
+    }
+
+    .favorite-header h1{
+
+        font-size:38px;
+
+    }
+
+    .favorite-header p{
+
+        font-size:16px;
+
+    }
+
+    .view-btn,
+
+    .remove-btn{
+
+        width:100%;
+
+    }
+
+}
+
+
+@media(max-width:480px){
+
+    .favorite-card{
+
+        padding:20px;
+
+    }
+
+    .favorite-image img{
+
+        height:190px;
+
+    }
+
+    .favorite-header h1{
+
+        font-size:30px;
+
+    }
+
+    .favorite-tag{
+
+        font-size:13px;
+
+    }
+
+}

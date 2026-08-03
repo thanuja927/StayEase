@@ -383,6 +383,27 @@ body{
 
 }
 
+/*======================================================
+                    FOOTER
+======================================================*/
+
+.support-footer{
+
+    margin-top:60px;
+
+    padding:20px;
+
+    text-align:center;
+
+    color:#ffffff;
+
+    background:rgba(0,0,0,.35);
+
+    backdrop-filter:blur(10px);
+
+    font-size:14px;
+
+}
 
 
 /*================ RESPONSIVE =================*/

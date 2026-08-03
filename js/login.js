@@ -51,6 +51,6 @@ document.getElementById("loginForm").addEventListener("submit", function (event)
 
     // Redirect to Profile Page
 
-    window.location.href = "profile.html";
+    window.location.href = "payment.html";
 
 });
